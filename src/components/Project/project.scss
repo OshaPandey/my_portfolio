@@ -1,0 +1,113 @@
+.project{
+    height: 100vh;
+    width: auto;
+    background-color: #21272F;
+    .top_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .title_container{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            font-size: 30px;
+            font-weight: 200;       
+            font-family:'Gloock', serif;
+            color:#00BD95;
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+        
+
+        }
+        .content_container{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            font-size: 15px;
+            font-weight: 100;       
+            font-family:'Roboto Slab', serif;
+            color:white;
+            text-align: center;
+        }
+        .slider{
+         
+            .left_button{
+                .icon{
+                    cursor: pointer;
+                    &:hover{
+                     scale: 0.95;
+                     transition: 0.3s;
+                     color: white;
+                    }
+                    font-size: 100px;
+                }
+                padding: 5px;
+                color: #00A896;
+                background-color: #21272F;
+
+            }
+            .right_button{
+                .icon{
+                    cursor: pointer;
+                    &:hover{
+                     scale: 0.95;
+                     transition: 0.3s;
+                     color: white;
+                    }
+                    font-size: 100px;
+                }
+                padding:5px;
+                color: #00A896;
+                background-color: #21272F;
+
+            }
+            align-items: center;
+            margin-top: 20vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .slider_container{
+                gap:10px;
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .left{
+                    gap:20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .top{
+                        img{
+                            height: 200px;
+                            width: 200px;
+                            border-radius: 20px;
+                        }
+
+                    }
+                    .bottom{
+                color: #00BD95;
+                font-size: 15px;
+                font-weight: 300;
+                font-family: 'Gloock', serif;   
+                    }
+
+                }
+                .right{
+                width: 60%;
+                 color: white;
+                font-size: 15px;
+                font-weight: 100;
+                font-family: 'Gloock', serif; 
+                }
+            }
+        }
+
+    }
+
+}
