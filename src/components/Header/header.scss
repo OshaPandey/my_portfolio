@@ -1,51 +1,76 @@
 .header{
     width: auto;
-    height: 100vh;
+    height: 88vh;
     background-color: #21272F;
     display: flex;
     justify-content: center;
+    overflow: hidden;
  
 .header_container{
     width: 70%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        width: 80%;
+    }
     .left_container{
         flex: 2;
+        margin-bottom: 20vh;
+        @media screen and (max-width: 700px) {
+            margin-bottom: 5vh;
+            margin-top: 15vh;
+            
+        }
         .top_container{
             .top_text{
-            color: white;
-            font-size: 20px;
-            font-weight: 400;
-            font-family: 'Gloock', serif;
-            margin-top: 20vh;
+                color: white;
+                font-size: 2vw;
+                font-weight: 500;
+                font-family: 'Roboto Mono', sans-serif;
+                margin-top: 20vh;
+                @media screen and (max-width: 700px) {
+                    font-size: 4vw;
+                }
             }
             .middle_text{
-            color: #00bd95;
-            font-size: 40px;
-            font-weight: 600;
-            font-family: 'Gloock', sans-serif;
+                color: #00bd95;
+                font-size: 6vw;
+                font-weight: 600;
+                font-family: 'Gloock', sans-serif;
+                @media screen and (max-width: 700px) {
+                    font-size: 12vw;
+                }
             }
             .bottom_text{
-                color: white;
-                font-size: 20px;
-                font-weight: 400;
-                font-family: 'Gloock', sans-serif;
-                margin-top:2vh ;
+                color: rgb(217, 217, 217);
+                font-size: 2vw;
+                font-weight: 600;
+                font-family: 'Nunito', sans-serif;
+                margin-top: 4vh;
+                @media screen and (max-width: 700px) {
+                    font-size: 5vw;
+                }
             }
             .down_text{
                 color: lightgrey;
-                font-size: 14px;
+                font-size: 1vw;
                 font-weight: 100;
-                font-family: 'Inter', sans-serif;
-                margin-top: 4vh;
+                font-family: 'Nunito', sans-serif;
                 width: 65%;
+                @media screen and (max-width: 700px) {
+                    font-size: 3vw;
+                    width: 85%;
+                }
 
             }
 
         }
         .middle_container{
             .button{
-                font-family: 'Inter',sans-serif;
+                font-family: 'Nunito', sans-serif;
                 display: flex;
                 flex-direction:row;
                 justify-content: center;
@@ -53,12 +78,18 @@
                 color: white;
                 background-color: #00bd95;
                 padding:10px 15px;
-                border-radius: 8px;
+                border-radius: 4px;
                 font-weight:700;
                 cursor: pointer;
                 margin-top:7vh;
+                box-shadow: rgba(173, 181, 189, 0.2) 0px 8px 24px;
+                @media screen and (max-width: 700px) {
+                    width: 17vw;
+                    font-size: 3.4vw;
+                }
                 &:hover{
                     background-color: #1b967b;
+                    scale: 0.95;
                     transition: 0.3s;
                 }
                 &:not(:hover){
@@ -67,14 +98,16 @@
             }
 
         }
-        .bottom_container{
-
-        }
 
     }
     .right_container{
         flex: 1;
-
+        img{
+            width: 25vw;
+            @media screen and (max-width: 700px) {
+                width: 85vw;
+            }
+        }
     }
 }    
 }
